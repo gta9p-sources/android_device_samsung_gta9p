@@ -43,5 +43,9 @@ PRODUCT_PACKAGES += \
     secril_config_svc \
     vendor.samsung.hardware.radio@2.2
 
+# Rotation
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.bootanim.set_orientation_4630946984348363905=ORIENTATION_90
+
 # Inherit from gta4l-common
 $(call inherit-product, device/samsung/gta9p-common/gta9p.mk)
