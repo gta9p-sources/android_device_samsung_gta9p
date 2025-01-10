@@ -27,5 +27,11 @@ PRODUCT_PACKAGES += \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc
 
+# RIL
+PRODUCT_PACKAGES += \
+    libxml2 \
+    secril_config_svc \
+    vendor.samsung.hardware.radio@2.2
+
 # Inherit from gta4l-common
 $(call inherit-product, device/samsung/gta9p-common/gta9p.mk)
